@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Refer_A_friend(ChaparralMotor)]" parallel="none">
+  <parameter name="browser" value="firefox"/>
+  <test name="chromeTest(failed)" parallel="none">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.immply.mainclass.FacebookShare">
+        <methods>
+          <include name="testFBShareWindow"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.immply.mainclass.FacebookShare -->
+      <class name="com.immply.mainclass.EmailShare">
+        <methods>
+          <include name="testEmailShareEnterInvalidData"/>
+          <include name="testEmailShareEntervalidData"/>
+          <include name="testPaymentLink"/>
+          <include name="testEmailShareEnterNothing"/>
+          <include name="testCopyUrl"/>
+          <include name="testEmailShare"/>
+        </methods>
+      </class> <!-- com.immply.mainclass.EmailShare -->
+    </classes>
+  </test> <!-- chromeTest(failed) -->
+  <test name="firefoxTest2(failed)" parallel="none">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.immply.mainclass.TestBitlyRun">
+        <methods>
+          <include name="testGmailPage"/>
+          <include name="TestFBLoginPage"/>
+        </methods>
+      </class> <!-- com.immply.mainclass.TestBitlyRun -->
+      <class name="com.immply.mainclass.FacebookShare">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.immply.mainclass.FacebookShare -->
+    </classes>
+  </test> <!-- firefoxTest2(failed) -->
+</suite> <!-- Failed suite [Refer_A_friend(ChaparralMotor)] -->
